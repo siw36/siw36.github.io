@@ -1,1 +1,57 @@
-Test
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>siw36</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800'>
+  <!--<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>-->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css'>
+  <!--<link href="fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/socials.css">
+  <script src="js/get_user_info.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="card">
+    <div class="card__image-container">
+      <img class="card__image" id="userAvatar" src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png" alt="">
+    </div>
+    <div class="card__content">
+      <h1 class="card__title" id="userName">user name</h1>
+      <p id="userBio">user bio</p>
+  </div>
+  <div class="social-btns">
+    <a class="btn" href="#">
+      <i style="color: orange" class="fab fa-github" href="https://github.com/siw36" target="_blank"></i>
+    </a>
+    <a class="btn" href="#">
+      <i style="color: #0073b1" class="fab fa-linkedin" href="https://www.linkedin.com/in/robin-klussmann-23117712a/" target="_blank"></i>
+    </a>
+    <a class="btn" href="#">
+      <i style="color: #009090" class="fab fa-xing" href="https://www.xing.com/profile/Robin_Klussmann2/cv" target="_blank"></i>
+    </a>
+    <a class="btn" href="#">
+      <i style="color: red" class="fab fa-redhat" href="https://www.redhat.com/rhtapps/services/verify/?certId=190-243-337" target="_blank"></i>
+    </a>
+    <a class="btn" href="#">
+      <img style="height: 25px; width: 25px; margin-top: 20%;" src="https://user-images.githubusercontent.com/38637223/44164304-83a6c880-a07a-11e8-9e88-a68225815756.png" href="https://galaxy.ansible.com/siw36" target="_blank"></img>
+    </a>
+    <a class="btn" href="#">
+      <i style="color: #099cec" class="fab fa-docker" href="https://hub.docker.com/u/siw36" target="_blank"></i>
+    </a>
+  </div>
+</div>
+<!-- partial -->
+
+</body>
+</html>
+
+<script>
+var json_obj = JSON.parse(userData('siw36'));
+document.getElementById('userAvatar').src=json_obj.avatar_url
+document.getElementById('userName').innerHTML=json_obj.name
+document.getElementById('userBio').innerHTML=json_obj.bio
+</script>
