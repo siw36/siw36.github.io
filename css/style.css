@@ -51,6 +51,34 @@ img {
   animation: ContentFadeIn .8s 1.6s forwards;
 }
 
+.center {
+  align: center;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.portfolio {
+  background: #333;
+  width: 720px;
+  height: auto;
+  border-radius: 6px;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  margin-left: 2rem;
+  color: #aaa;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+.portfolio i {
+  font-size: 40px;
+}
+.portfolio td:hover {
+  background-color: black;
+}
+
 @keyframes LineFadeIn {
   0% {
     opacity: 0;

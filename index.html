@@ -56,13 +56,54 @@
 </div>
 <!-- partial -->
 
+<table class="portfolio">
+ <tr>
+   <th>Code</th>
+   <th>Certs</th>
+   <th>Projects</th>
+ </tr>
+ <tr>
+   <td>
+     <a class="btn" target="_blank" rel="noopener noreferrer" href="https://github.com/siw36">
+       <i style="color: #be4efe" class="fab fa-github"></i>
+     </a>
+   </td>
+   <td>
+     <a class="btn" target="_blank" rel="noopener noreferrer" href="https://cs.lpi.org/caf/Xamman/certification/process_verify?lpi_id=LPI000355791&ver_code=uuz43bunh7">
+       <i style="color: #ffcd04" class="fab fa-linux"></i>
+     </a>
+   </td>
+   <td>some icon</td>
+ </tr>
+ <tr>
+   <td>
+     <a class="btn" target="_blank" rel="noopener noreferrer" href="https://galaxy.ansible.com/siw36">
+       <img style="height: 40px; width: 40px;" src="https://user-images.githubusercontent.com/38637223/44164304-83a6c880-a07a-11e8-9e88-a68225815756.png"></img>
+     </a>
+   </td>
+   <td>
+     <a class="btn" target="_blank" rel="noopener noreferrer" href="https://www.redhat.com/rhtapps/services/verify/?certId=190-243-337">
+       <i style="color: red" class="fab fa-redhat"></i>
+     </a>
+   </td>
+   <td>some icon</td>
+ </tr>
+ <tr>
+   <td class="btn" target="_blank" rel="noopener noreferrer" href="https://hub.docker.com/u/siw36">
+       <i style="color: #099cec" class="fab fa-docker"></i>
+   </td>
+   <td>some icon</td>
+   <td>some icon</td>
+ </tr>
+</table>
+
 </body>
 </html>
 
 <script>
 var json_obj = JSON.parse(userData('siw36'));
-document.getElementById('userAvatar').src=json_obj.avatar_url
+//document.getElementById('userAvatar').src=json_obj.avatar_url
 document.title=json_obj.name
-document.getElementById('userName').innerHTML=json_obj.name
-document.getElementById('userBio').innerHTML=json_obj.bio
+//document.getElementById('userName').innerHTML=json_obj.name
+//document.getElementById('userBio').innerHTML=json_obj.bio
 </script>
